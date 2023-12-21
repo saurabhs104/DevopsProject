@@ -1,6 +1,9 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: rabbitmq-configmap
+  name: auth-configmap
 data:
-  PLACEHOLDER: "NONE"
+  DATABASE_HOST: db
+  DATABASE_NAME: authdb
+  DATABASE_USER: nasi
+  AUTH_TABLE: auth_user
